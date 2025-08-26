@@ -69,7 +69,7 @@ function Sidebar() {
                         variant="subtitle1"
                         sx={{ fontSize: 12, color: "gray" }}
                     >
-                        You are logged in as:
+                        You are logged in as: admin
                     </Typography>
                 </Typography>
             </Box>
@@ -106,7 +106,7 @@ function Sidebar() {
                 </ListItemButton>
                 <Collapse in={openFunctionalities} timeout="auto" unmountOnExit>
                     <List sx={{ py: 0 }}>
-                        <ListItemButton>
+                        <ListItemButton component={Link} to="/retune-retrain">
                             <ListItemText
                                 primary="Retune & Retrain"
                                 sx={{
@@ -116,7 +116,7 @@ function Sidebar() {
                                 }}
                             />
                         </ListItemButton>
-                        <ListItemButton>
+                        <ListItemButton component={Link} to="/data-analysis">
                             <ListItemText
                                 primary="Data Analysis"
                                 sx={{
@@ -126,7 +126,7 @@ function Sidebar() {
                                 }}
                             />
                         </ListItemButton>
-                        <ListItemButton>
+                        <ListItemButton component={Link} to="/progression">
                             <ListItemText
                                 primary="Progression"
                                 sx={{
@@ -169,7 +169,7 @@ function Sidebar() {
                 </ListItemButton>
                 <Collapse in={openSettings} timeout="auto" unmountOnExit>
                     <List sx={{ py: 0 }}>
-                        <ListItemButton>
+                        <ListItemButton component={Link} to="/profile">
                             <ListItemText
                                 primary="Profile"
                                 sx={{
@@ -179,7 +179,7 @@ function Sidebar() {
                                 }}
                             />
                         </ListItemButton>
-                        <ListItemButton>
+                        <ListItemButton component={Link} to="/appearance">
                             <ListItemText
                                 primary="Appearance"
                                 sx={{

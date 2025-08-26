@@ -4,6 +4,11 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import RetuneRetrain from "./pages/RetuneRetrain";
+import DataAnalysis from "./pages/DataAnalysis";
+import Progression from "./pages/Progression";
+import Profile from "./pages/Profile";
+import Appearance from "./pages/Appearance";
 import "./App.css";
 
 const drawerWidth = 240;
@@ -27,6 +32,17 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route
+                            path="/retune-retrain"
+                            element={<RetuneRetrain />}
+                        />
+                        <Route
+                            path="/data-analysis"
+                            element={<DataAnalysis />}
+                        />
+                        <Route path="/progression" element={<Progression />} />
+                        <Route path="/profile" element={<Profile />} />
+                        <Route path="/appearance" element={<Appearance />} />
                     </Routes>
                 </Box>
             </Box>
