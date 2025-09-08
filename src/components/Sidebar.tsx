@@ -21,7 +21,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Wrench } from "lucide-react";
 import { useState } from "react";
 
-const drawerWidth = 270;
+const drawerWidth = 240;
 
 function Sidebar() {
     const location = useLocation();
